@@ -23,12 +23,13 @@ Data engineer finishing an M.S. in Computer Science at Northeastern University (
 | Data engineering | Spark / PySpark, dbt, Airflow, Databricks, Snowflake, Delta Lake, Redshift |
 | Cloud | AWS (S3, Glue, Athena, ECS Fargate, CDK, EventBridge), Azure (Databricks, ADLS Gen2) |
 | BI | Power BI, Amazon QuickSight, Tableau, Excel |
-| AI and tooling | GenAI agents, MCP, Docker, Git, Claude Code |
+| AI and tooling | GenAI agents, MCP, LangGraph, FastAPI, Docker, Git, Claude Code |
 
 ## Featured projects
 
 | Project | What it is | Stack |
 |---|---|---|
+| [query-agent](https://github.com/xunluo776/query-agent) | Ask questions about your data in plain English: a LangGraph agent writes SQL and runs it through a config-driven MCP server with read-only, row-capped and time-limited queries. Chat sessions, SQL-error retry and CSV download, running in three Docker containers | Python, MCP, LangGraph, Gemini, FastAPI, Streamlit, Docker Compose |
 | [superstore-databricks-dbt-project](https://github.com/xunluo776/superstore-databricks-dbt-project) | End-to-end lakehouse: Auto Loader ingestion into Bronze, dbt models and snapshots into a Silver/Gold star schema, then Power BI analysis of growth, segments and discount vs. margin | Databricks, dbt, Delta Lake, PySpark, Power BI |
 | [Daily-Pricing-ETL-Pipeline](https://github.com/xunluo776/Daily-Pricing-ETL-Pipeline) | Daily pricing ETL on Azure: HTTP, streaming and reference-database ingestion, Delta transforms, SCD Type 1 and Type 2 dimensions, and a reporting fact table | Azure Databricks, ADLS Gen2, PySpark, Delta |
 | [bitcoin-airflow-pipeline](https://github.com/xunluo776/bitcoin-airflow-pipeline) | Daily Airflow DAG that ingests into Snowflake, then runs dbt Silver/Gold models and tests through Astronomer Cosmos | Airflow (Astro), Snowflake, dbt, Docker |
